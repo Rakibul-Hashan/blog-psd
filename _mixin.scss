@@ -1,0 +1,10 @@
+@mixin animation($time, $type){
+    transition: $time $type;
+}
+
+@mixin blog-type($bg-color,$translatex,$translatey,$paddy,$paddx){
+    background:$bg-color;
+    transform: translate($translatex,$translatey);
+	padding: $paddy $paddx;
+	font-weight: 600;
+}

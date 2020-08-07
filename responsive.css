@@ -1,0 +1,246 @@
+@media (max-width:1300px){
+    .top-header-section .navbar .custom-brand {
+        padding: 10px 160px;
+        padding-right: 15px;
+    }
+    .top-header-section .navbar .custom-brand span {
+        font-size: 17px;
+    }
+    .top-header-section .navbar .nav-right {
+        margin-right: 100px;
+    }
+}
+
+/* ------------------max-width:1199px------------------------- */
+
+@media (max-width:1199px){
+    .top-header-section .navbar .custom-brand {
+        padding: 10px 160px;
+        padding-right: 15px;
+    }
+    .top-header-section .navbar .custom-brand span {
+        font-size: 17px;
+    }
+    .top-header-section .navbar .nav-right {
+        margin-right: 70px;
+    }
+}
+
+/* ----------large Device--------- */
+@media (max-width:1102px){
+    .top-header-section .navbar .custom-brand {
+        padding: 10px 150px;
+        padding-right: 15px;
+    }
+    .top-header-section .navbar .custom-brand span {
+        font-size: 16px;
+    }
+    .top-header-section .navbar .nav-right {
+        margin-right: 70px;
+    }
+}
+
+/* ----------medium Device--------- */
+@media (max-width:991px){
+    .navbar-collapse {
+        align-items: center;
+        display: flex;
+    }
+    .nav-left {
+        margin: 0;
+        width: 50%;
+        background:#00000505;
+        padding: 35px;
+    }
+
+    .top-header-section .navbar .nav-right .nav-item .nav-link {
+        border:0;
+        padding: 0px 100px;
+        color: white;
+    }
+    .top-header-section .navbar .nav-right {
+        margin-right: 70px;
+        width: 50%;
+        text-align: right;
+
+        background: #1a54e7;
+        margin: 0;
+    }
+    .top-header-section .navbar .nav-right .nav-item .nav-link:hover {
+        background: #fff;
+        color: #1a54e7;
+        padding: 0px 215px;
+    }
+    .top-header-section .navbar .nav-right .nav-item .nav-link:hover {
+        border-bottom:0;
+      
+
+    }
+    .carousel-section{
+        padding-top:50px;
+    }
+    .carousel-section .carousel-foot {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .carousel-section .car-title h5 {
+        font-size: 22px;
+    }
+    .top-blogs-section .top-blogs .blogs h4 {
+
+        font-size: 18px;
+        padding: 10px 0px;
+    }
+    .top-blogs-section .top-blogs .blogs .blog-type, .full-blog-section .full-blog .blog-type, .footer-blog-section .footer-blogs .blogs .blog-type {
+        transform: translate(15px, 100px);
+        padding: 3px 12px;
+    }
+    .full-blog-section .full-blog div {
+        width: 60%;
+        transform: translate(40%, 90px);
+    }
+    .full-blog-section .full-blog div h1 {
+        font-size: 25px;
+    }
+    .full-blog-section .full-blog div p {
+        font-size: 16px;
+    }
+    .full-blog-section .full-blog .blog-type {
+        transform: translate(0px, 180px)!important;
+    }
+    .full-blog-section .full-blog .author {
+        transform: translate(0px, 185px);
+        font-size: 12px ;
+    }
+    .down-blogs-section .down-blogs .blog-trips, .down-blogs-section .down-blogs .blog-nature, .down-blogs-section .down-blogs .blog-people, .down-blogs-section .down-blogs .blog-tech, .down-blogs-section .down-blogs .blog-fashion {
+        transform: translate(15px, 100px);
+        padding: 3px 12px;
+    }
+    .down-blogs-section .down-blogs h4 {
+        font-size: 16px;
+        font-weight: 600;
+        padding-top: 15px;
+    }
+    .top-blogs-section .top-blogs .blogs .author, .full-blog-section .full-blog .author, .down-blogs-section .down-blogs .author, .footer-blog-section .footer-blogs .blogs .author{
+        font-size: 12px ;
+    }
+    .footer-section .footer h2 {
+        font-size: 25px;
+    }
+    .footer-section .footer h5 {
+        font-size: 17px;
+        margin-bottom: 0px;
+        padding-bottom: 20px;
+        color: #ffffff38;
+    }
+}
+
+    /* ----------small Device--------- */
+
+@media (max-width:767px){
+    .carousel-section .car-title h5 {
+        font-size: 18px;
+    }
+    .carousel-section .carousel-foot {
+        padding-top: 35px;
+        padding-bottom: 10px;
+        justify-content: center;
+    }
+    .carousel-section .carousel-foot p {
+        font-size: 13px;
+    }
+    
+.carousel-section .carousel-foot button {
+    padding: 2px 13px;
+    border: 2px solid #1a54e7;
+    font-size: 14px !importandt;
+
+}
+.carousel-section .carousel-foot button {
+
+
+}
+.carousel-section .carousel-foot button:hover {
+    padding: 2px 13px;
+    border: 2px solid #1a54e7;
+
+}
+.top-blogs-section .top-blogs .blogs .blog-type, .full-blog-section .full-blog .blog-type, .footer-blog-section .footer-blogs .blogs .blog-type {
+    transform: translate(15px, 75px);
+    padding: 2px 10px;
+    font-size: 12px;
+}
+.top-blogs-section .top-blogs .blogs h4 {
+    font-size: 16px;
+    padding: 10px 0px;
+}
+.full-blog-section .full-blog div {
+    width: 60%;
+    transform: translate(40%, 40px);
+}
+.full-blog-section .full-blog div h1 {
+    font-size: 22px;
+    font-weight: 600;
+}
+.full-blog-section .full-blog .author {
+    transform: translate(0px, 135px);
+    font-size: 12px;
+}
+
+.full-blog-section .full-blog div p {
+    font-size: 14px;
+    line-height: 1.2;
+}
+.full-blog-section .full-blog .blog-type {
+    transform: translate(0px, 130px)!important;
+}
+.down-blogs-section .down-blogs h4 {
+    font-size: 14px;
+
+    padding-top: 10px;
+}
+.down-blogs-section .down-blogs .blog-trips, .down-blogs-section .down-blogs .blog-nature, .down-blogs-section .down-blogs .blog-people, .down-blogs-section .down-blogs .blog-tech, .down-blogs-section .down-blogs .blog-fashion {
+    transform: translate(15px, 70px);
+    padding: 1px 9px;
+    font-size: 13px;
+}
+.top-blogs-section .top-blogs .blogs .author, .full-blog-section .full-blog .author, .down-blogs-section .down-blogs .author, .footer-blog-section .footer-blogs .blogs .author {
+    font-size: 11px;
+}
+.footer-blog-section .footer-blogs .blogs h4 {
+    font-size: 16px;
+    padding-top: 10px;
+    text-align: center;
+}
+.footer-section .footer h5 {
+    font-size: 17px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    color: #ffffff38;
+}
+.sign-up{
+			width: 75%;
+			margin-left: auto;
+			margin-right: auto;
+			
+        }
+ .form-control {
+            height: calc(20px + 0px + 0px);
+            padding: 0.375rem 0.75rem;
+            margin-right: -77px;
+            font-size: 15px;
+            color: #fff;
+            background-color:#ffffff38;
+            background-clip: padding-box;
+            border:0;
+            border-radius: 30px;
+            transition: all .3s ease;
+        }
+
+}
+@media (max-width:575px){
+    /* ----------extra small Device--------- */
+}
+@media (max-width:320px){
+ 
+}

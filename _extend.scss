@@ -1,0 +1,22 @@
+@import"_mixin";
+
+%blog-type{
+	position: absolute;
+	color: #fff;
+	top:0;
+	left: 0;
+    font-weight: 600;
+}
+%blog-trip{
+	@include blog-type(#d90445,15px,180px,5px,20px);
+    
+}
+%blog-down{
+	@include blog-type(#d90445,15px,180px,5px,20px);
+	
+}
+%author{
+	color:#b0b0b0;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+}

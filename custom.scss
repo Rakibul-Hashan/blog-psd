@@ -1,0 +1,391 @@
+@import"_extend";
+@import"_reset";
+@import"_mixin";
+@import"_variable";
+
+
+// top header section
+.top-header-section{
+		.navbar{
+			padding:0 !important;
+			background-color: #fff;
+			.custom-brand{
+				background-color:$primary-color;
+				padding:15px  180px;
+				padding-right: 24px;
+				span{
+					font-size: 18px;
+					font-weight: 600;
+					color: #fff;
+					font-family: 'PT Sans', sans-serif;
+				}
+			}
+			.nav-left{
+				align-items: center;
+				font-family: 'PT Sans', sans-serif;
+				.nav-item{
+					.nav-link{
+						color:#b2b2b2;
+						display: initial;
+						font-size: 18px;
+						&:hover{
+							color:black;
+						}
+					}
+				}
+			}
+			.nav-right{
+				margin-right: 210px;
+				.nav-item{
+					.nav-link{
+						color:$primary-color;
+						font-size: 18px;
+						font-family: 'PT Sans', sans-serif;
+						border-bottom: 3px solid transparent;
+						@include animation(.3s, ease);
+						display: initial;
+						padding: 13px 5px;
+						margin-right: 8px;
+						
+
+						&:hover{
+							border-bottom: 4px solid $primary-color;
+						}
+					}
+				}
+			}
+		}
+}
+
+/*#################################################*/
+.navbar-toggler{
+    border: 1px solid transparent !important;
+	padding: 3px 8px;
+	background-color: #1a54e7;
+	height: 44px;
+	border-radius: 0;
+}
+.navbar-toggler span{
+    /* border-color: rgb(255, 252, 252)!important; */
+    width: 25px;
+    height: 2px;
+    display: block;
+    background: #fff;
+    margin: 5px 0px;
+    transition-duration: 0.4s; 
+}
+.navbar-toggler span:first-child{
+    width: 36px;
+}
+.navbar-toggler span:last-child{
+    width: 30px;
+}
+
+.navbar-toggler:hover span{
+	width: 36px;
+}
+/*#################################################*/
+.btn-search{
+	color:#b2b2b2;
+	transform: rotateY(180deg);
+}
+// top header section
+
+
+
+// carousel section
+.carousel-section{
+	background-image: url(../images/carousel-bg.png);
+	background-size: cover;
+	margin: auto;
+	background-repeat: no-repeat;
+	padding-top: 215px;
+	
+
+					.car-title{
+						text-align: center;
+						img{
+							margin-bottom: 25px;
+						}
+						h5{
+							color: #fff;
+							font-size: 33px;
+							font-family: 'PT Serif', serif;
+						}
+					}
+					.carousel-foot{
+						padding-top: 215px;
+						padding-bottom: 50px;
+						margin-top: auto;
+						button{
+							background-color: $primary-color;
+							padding: 6px 20px;
+							border: 2px solid transparent;
+							border-radius: 0px;
+							color: #fff;
+							font-family: 'PT Sans', sans-serif;
+							font-weight: 600;
+
+							&:hover{
+								background-color: #fff;
+								padding: 6px 20px;
+								border:2px solid $primary-color;
+								border-radius: 0px;
+								color: $primary-color;
+							}
+
+						}
+						p{
+							color:#fff;
+							float:right;
+							
+							span{}
+						}
+					}
+
+}
+
+.carousel-control-next-icon,.carousel-control-prev-icon {
+	background-image: url(../images/100393_next_512x512.png);
+	width: 38px;
+	height: 32px;
+	background-color: #fff;
+	
+	
+}
+
+.carousel-control-prev-icon {
+	transform: rotateY(180deg);
+	
+}
+.carousel-control-prev, .carousel-control-next {
+	width: 38px;
+	height: 32px;
+	opacity: 1;
+	top: 30%;
+    transform: translateY(-30%);
+
+}
+.carousel-indicators li {
+    display: none;
+}
+// carousel section
+
+//####################  top-blogs-section  #########################
+.top-blogs-section{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background: #f6f6f6;
+    .top-blogs{
+		.blogs{
+			img{
+				position: relative;
+			}
+			.blog-type{
+				@extend %blog-type;
+				@extend %blog-trip;
+			}
+			h4{
+				font-family: 'PT Serif', serif;
+				font-size: 24px;
+				padding: 10px 0px;
+				
+			}
+			.author{
+				@extend %author;
+			}
+		}
+}
+}
+.full-blog-section{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	.full-blog{
+		position: relative;
+		img{}
+		div{
+			position: absolute;
+			top:0;
+			left:0;
+			width: 60%;
+			text-align: center;
+			transform: translate(40%, 200px);
+			h1{
+				font-size: 48px;
+				color: #fff;
+			}
+			p{
+				font-size: 18px;
+				color: #fff;
+			}
+		}
+		.blog-type {
+			position: absolute;
+			top: 0;
+			left: 0;
+			transform: translate(0px, 300px);
+			@extend %blog-type;
+			@extend %blog-trip;
+			
+		}
+		.author{
+			position: absolute;
+			right: 20px;
+			top: 0;
+			transform: translate(0px, 315px);
+			@extend %author;
+		}
+	}
+}/*End of FULL BLOG*/
+
+
+/*---------------Down Blogs---------------------*/
+	.down-blogs-section{
+		padding-top: 30px;
+		padding-bottom: 30px;
+		.down-blogs{
+			font-family: 'PT Sans', sans-serif;
+			padding-bottom: 30px;
+			h4{
+				font-size: 18px;
+				font-weight: 600;
+				padding-top: 20px;
+				
+	
+			}
+			.blog-trips{
+				@extend %blog-type;
+				@extend %blog-down;
+			}
+			.blog-nature{
+				@extend %blog-type;
+				@extend %blog-down;
+				background-color: #58b600;
+			}
+			.blog-people{
+				@extend %blog-type;
+				@extend %blog-down;
+				background-color: #1a54e7;
+			}
+			.blog-tech{
+				@extend %blog-type;
+				@extend %blog-down;
+				background-color: black;
+			}
+			.blog-fashion{
+				@extend %blog-type;
+				@extend %blog-down;
+				background-color:#8200b2 ; 
+			}
+			.author{
+				@extend %author;
+			}
+		}
+	}
+
+
+//####################  blog section  #########################
+
+//####################  footer blog section  #########################
+.footer-blog-section{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background: #f6f6f6;
+	.footer-blogs{
+		.blogs{
+			img{
+				position: relative;
+			}
+			.blog-type{
+				@extend %blog-type;
+				@extend %blog-trip;
+			}
+			h4{
+				font-family: 'PT Serif', serif;
+				font-size: 18px;
+				font-weight: 600;
+				padding-top: 20px;
+			}
+			.author{
+				@extend %author;
+			}
+		}
+}
+	}
+//####################  footer blog section  #########################
+
+//####################  footer section  #########################
+.footer-section{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	img{}
+	.footer{
+		position: absolute;
+		left: 20%;
+		/* transform: translateX(10px); */
+		top: 120%;
+		transform: translateY(-120%);
+		text-align: center;
+
+		h2{
+			font-size:35px;
+			margin-bottom: 0px;
+			padding-bottom: 5px;
+			color:#fff;
+		}
+		h5{
+			font-size:20px;
+			margin-bottom: 0px;
+			padding-bottom: 50px;
+			color:#ffffff38;
+		}
+		.sign-up{
+			width: 75%;
+			margin-left: auto;
+			margin-right: auto;
+			.form-control {
+				height: calc(50px + 0px + 0px);
+				padding: 0.375rem 0.75rem;
+				margin-right: -77px;
+				font-size: 15px;
+    			color: #fff;
+				background-color:#ffffff38;
+				background-clip: padding-box;
+				border:0;
+				border-radius: 30px;
+				transition: all .3s ease;
+			}
+			
+		}
+	}
+}
+.form-control:focus {
+    color:transparent;
+    background-color: transparent;
+    border-color: #fff;
+    outline: 0;
+    box-shadow: none;
+}
+.btn-custom{
+	z-index: 3;
+    color:$primary-color;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid transparent;
+	padding: 0px 30px;
+    font-size: 1rem;
+    line-height: 1.5;
+	border-radius: 30px;
+	text-transform: capitalize;
+	font-size: 18px;
+	font-weight: 600;
+	font-family: 'PT Sans', sans-serif;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+button:focus {
+	outline:0;
+	background-color:$primary-color;
+	border: 1px solid #fff;
+	color:#fff;
+}
+//####################  footer section  #########################
